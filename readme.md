@@ -30,7 +30,7 @@ Instantiate de class and use the pager method with a few parameters.
     use Anekdotes\Pagination\Pagination;
 
     $pagination = new Pagination();
-    var_dump($pagination->pager(10, 1))
+    var_dump($pagination->pager(10, 1));
     /*
     array(6) {
       [0]=>

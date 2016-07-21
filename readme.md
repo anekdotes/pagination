@@ -1,4 +1,4 @@
-# Anekdotes Mailer
+# Anekdotes Pagination
 
 [![Latest Stable Version](https://poser.pugx.org/anekdotes/pagination/v/stable)](https://packagist.org/packages/anekdotes/pagination)
 [![Build Status](https://travis-ci.org/anekdotes/pagination.svg?branch=master)](https://travis-ci.org/anekdotes/pagination)

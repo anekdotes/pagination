@@ -11,16 +11,16 @@
 namespace Anekdotes\Pagination;
 
 /**
- * Pagination class
+ * Pagination class.
  */
 class Pagination
 {
     /**
-     * Generates the pages to display according to its parameters
+     * Generates the pages to display according to its parameters.
      *
-     * @param integer $pages The total amount of page
-     * @param integer $current The current page
-     * @param integer $length The number of page to display
+     * @param int $pages   The total amount of page
+     * @param int $current The current page
+     * @param int $length  The number of page to display
      *
      * @return array The pages to display
      */

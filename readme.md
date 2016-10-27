@@ -18,7 +18,7 @@ Install via composer into your project:
 
 ## Basic Usage
 
-Instantiate de class and use the pager method with a few parameters.
+Instantiate the class and use the pager method with a few parameters.
 
 *  $pages: total number of pages
 

@@ -49,7 +49,7 @@ class Pagination
             }
         }
 
-        for ($i = $min; $i <= $max; $i++) {
+        for ($i = $min; $i <= $max; ++$i) {
             $datas[] = $i;
         }
 

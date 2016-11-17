@@ -26,25 +26,25 @@ Instantiate the class and use the pager method with a few parameters.
 
 *  $length (optional): how many page to display
 
-```
-    use Anekdotes\Pagination\Pagination;
+```php
+use Anekdotes\Pagination\Pagination;
 
-    $pagination = new Pagination();
-    var_dump($pagination->pager(10, 1));
-    /*
-    array(6) {
-      [0]=>
-      int(1)
-      [1]=>
-      int(2)
-      [2]=>
-      int(3)
-      [3]=>
-      int(4)
-      [4]=>
-      int(5)
-      [5]=>
-      int(6)
-    }
-    */
+$pagination = new Pagination();
+var_dump($pagination->pager(10, 1));
+/*
+array(6) {
+  [0]=>
+  int(1)
+  [1]=>
+  int(2)
+  [2]=>
+  int(3)
+  [3]=>
+  int(4)
+  [4]=>
+  int(5)
+  [5]=>
+  int(6)
+}
+*/
 ```

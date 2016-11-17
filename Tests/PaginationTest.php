@@ -16,14 +16,12 @@ use PHPUnit_Framework_TestCase;
 
 class PaginationTest extends PHPUnit_Framework_TestCase
 {
-    //Tests the instantion of the Mailer
     public function testInstantiatePagination()
     {
         $pagination = new Pagination();
         $this->assertInstanceOf(Pagination::class, $pagination);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager1()
     {
         $pagination = new Pagination();
@@ -31,7 +29,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($result);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager2()
     {
         $pagination = new Pagination();
@@ -39,7 +36,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($result);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager3()
     {
         $pagination = new Pagination();
@@ -49,7 +45,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($result, $expected);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager4()
     {
         $pagination = new Pagination();
@@ -58,7 +53,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($result, $expected);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager5()
     {
         $pagination = new Pagination();
@@ -67,7 +61,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($result, $expected);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager6()
     {
         $pagination = new Pagination();
@@ -76,7 +69,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($result, $expected);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager7()
     {
         $pagination = new Pagination();
@@ -85,7 +77,6 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($result, $expected);
     }
 
-    //Tests the instantion of the Mailer
     public function testPaginationPager8()
     {
         $pagination = new Pagination();

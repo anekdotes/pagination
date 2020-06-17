@@ -49,8 +49,24 @@ class Pagination
             }
         }
 
+        if ($min > 1 && $current > 1) {
+            $datas[] = 1;
+
+            if ($min - 1 > 1) {
+                $datas[] = '...';
+            }
+        }
+
         for ($i = $min; $i <= $max; ++$i) {
             $datas[] = $i;
+        }
+
+        if ($max < $pages && $current < $pages) {
+            if ($max + 1 < $pages) {
+                $datas[] = '...';
+            }
+
+            $datas[] = $pages;
         }
 
         return $datas;

@@ -1,5 +1,6 @@
 {
   "name": "anekdotes/pagination",
+  "version": "1.0.2",
   "type": "library",
   "description": "Utility to generate an intelligent ``range`` of links based on the current page and total pages.",
   "keywords": [

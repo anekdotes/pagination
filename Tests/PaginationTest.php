@@ -12,13 +12,14 @@
 namespace Tests;
 
 use Anekdotes\Pagination\Pagination;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class PaginationTest extends PHPUnit_Framework_TestCase
+final class PaginationTest extends TestCase
 {
     public function testInstantiatePagination()
     {
         $pagination = new Pagination();
+
         $this->assertInstanceOf(Pagination::class, $pagination);
     }
 
@@ -26,6 +27,7 @@ class PaginationTest extends PHPUnit_Framework_TestCase
     {
         $pagination = new Pagination();
         $result = $pagination->pager(0, 1, 6);
+
         $this->assertFalse($result);
     }
 
@@ -33,6 +35,7 @@ class PaginationTest extends PHPUnit_Framework_TestCase
     {
         $pagination = new Pagination();
         $result = $pagination->pager(20, 1, 0);
+
         $this->assertFalse($result);
     }
 
@@ -40,8 +43,11 @@ class PaginationTest extends PHPUnit_Framework_TestCase
     {
         $pagination = new Pagination();
         $result = $pagination->pager(5, 1);
+
         $this->assertFalse(false);
+
         $expected = [1, 2, 3, 4, 5];
+
         $this->assertEquals($result, $expected);
     }
 
@@ -50,14 +56,16 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $pagination = new Pagination();
         $result = $pagination->pager(10, 1);
         $expected = [1, 2, 3, 4, 5, 6, '...', 10];
+
         $this->assertEquals($result, $expected);
     }
 
     public function testPaginationPager5()
     {
         $pagination = new Pagination();
-        $result = $pagination->pager(10, 5);
-        $expected = [2, 3, 4, 5, 6, 7, 8];
+        $result = $pagination->pager(10, 5, 3);
+        $expected = [1, '...', 4, 5, 6, 7, '...', 10];
+
         $this->assertEquals($result, $expected);
     }
 
@@ -66,6 +74,7 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $pagination = new Pagination();
         $result = $pagination->pager(10, 10);
         $expected = [1, '...', 4, 5, 6, 7, 8, 9, 10];
+
         $this->assertEquals($result, $expected);
     }
 
@@ -74,6 +83,7 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $pagination = new Pagination();
         $result = $pagination->pager(10, 11);
         $expected = [1, '...', 4, 5, 6, 7, 8, 9, 10];
+
         $this->assertEquals($result, $expected);
     }
 
@@ -82,6 +92,7 @@ class PaginationTest extends PHPUnit_Framework_TestCase
         $pagination = new Pagination();
         $result = $pagination->pager(10, 0);
         $expected = [1, 2, 3, 4, 5, 6, '...', 10];
+        
         $this->assertEquals($result, $expected);
     }
 }

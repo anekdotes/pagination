@@ -41,6 +41,7 @@ class Pagination
         if ($current > ($min + $sub)) {
             $min = ($current - $sub);
             $max = ($min + $length);
+            
             if ($max > $pages) {
                 $diff = $max - $pages;
                 $max = $pages;

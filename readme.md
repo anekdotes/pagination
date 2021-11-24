@@ -2,7 +2,6 @@
 
 [![Latest Stable Version](https://poser.pugx.org/anekdotes/pagination/v/stable)](https://packagist.org/packages/anekdotes/pagination)
 [![Build Status](https://travis-ci.org/anekdotes/pagination.svg?branch=master)](https://travis-ci.org/anekdotes/pagination)
-[![codecov.io](https://codecov.io/github/anekdotes/pagination/coverage.svg)](https://codecov.io/github/anekdotes/pagination?branch=master)
 [![StyleCI](https://styleci.io/repos/62647499/shield?style=flat)](https://styleci.io/repos/62647499)
 [![License](https://poser.pugx.org/anekdotes/pagination/license)](https://packagist.org/packages/anekdotes/pagination)
 [![Total Downloads](https://poser.pugx.org/anekdotes/pagination/downloads)](https://packagist.org/packages/anekdotes/pagination)
